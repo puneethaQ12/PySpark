@@ -1,1 +1,14 @@
 PySpark SQL Tutorial Introduction
+
+The pyspark.sql is a module in PySpark that is used to perform SQL-like operations on the data stored in memory.
+Important classes from SQL module:
+
+pyspark.sql.SparkSession – SparkSession is the main entry point for DataFrame and SQL functionality. It is responsible for coordinating the execution of SQL queries and DataFrame operations. SparkSession can be created using the SparkSession.builder API. It encapsulates the functionality of the older SQLContext and HiveContext.
+
+pyspark.sql.DataFrame – DataFrame is a distributed collection of data organized into named columns. DataFrames can be created from various sources like CSV, JSON, Parquet, Hive, etc., and they can be transformed using a rich set of high-level operations.
+
+pyspark.sql.Column – A column expression in a DataFrame. It can be used to reference, manipulate, and transform columns.
+
+pyspark.sql.Row – A row of data in a DataFrame. Rows are used to store and manipulate data in a distributed and structured way. Each Row object can be thought of as a record or a tuple with named fields, similar to a row in a relational database table.
+
+pyspark.sql.GroupedData – An object type returned by DataFrame. groupBy() this class provides methods for calculating summary statistics, aggregating data, and applying various functions to grouped data.
